@@ -1,0 +1,203 @@
+.project-card {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.project-header h2 {
+  margin: 0;
+  color: #2d3748;
+  font-size: 1.8rem;
+}
+
+.repo-link {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.repo-link:hover {
+  color: #764ba2;
+}
+
+.description {
+  color: #4a5568;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.project-meta {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.meta-item {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.label {
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.tech-stack h3,
+.contributions h3,
+.commits h3 {
+  color: #2d3748;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.tag {
+  background: #edf2f7;
+  color: #4a5568;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.contributions ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contributions li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+.contributions li:before {
+  content: "▸";
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: bold;
+}
+
+.commits {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.commit-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.commit-list li {
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem 0;
+  color: #4a5568;
+}
+
+.commit-date {
+  color: #718096;
+  font-size: 0.9rem;
+  min-width: 100px;
+}
+
+.commit-message {
+  flex: 1;
+}
+
+.problem-solutions {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.problem-item {
+  background: #f7fafc;
+  border-left: 4px solid #667eea;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 4px;
+}
+
+.problem-item:last-child {
+  margin-bottom: 0;
+}
+
+.problem-title {
+  color: #2d3748;
+  font-size: 1.1rem;
+  margin: 0 0 1rem 0;
+  font-weight: 600;
+}
+
+.problem-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.detail-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: #4a5568;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.detail-content {
+  color: #4a5568;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.result-section {
+  background: #edf2f7;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.result-section .detail-label {
+  color: #667eea;
+}
+
+.result-section .detail-content {
+  color: #2d3748;
+  font-weight: 500;
+}
