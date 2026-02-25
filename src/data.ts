@@ -6,7 +6,7 @@ export const projects: Project[] = [
     repository: '',
     description: 'AI 및 웹개발 교육 서비스의 학습관리시스템(LMS)을 Django 기반에서 NestJS + GraphQL로 마이그레이션하고, 운영 효율과 성능을 개선',
     role: 'Backend Developer',
-    period: '2023.01 - 현재',
+    period: '2025.01 - 2026.01',
     techStack: ['NestJS', 'GraphQL', 'TypeScript', 'PostgreSQL', 'DataLoader', 'Django', 'Python'],
     contributions: [
       'Django REST API를 NestJS + GraphQL로 점진적 마이그레이션',
@@ -47,7 +47,7 @@ export const projects: Project[] = [
     repository: '',
     description: 'AI 및 웹개발 교육 서비스를 위한 교육 포탈 및 지원자 관리 시스템 개발',
     role: 'Backend Developer',
-    period: '2023.01 - 2023.12',
+    period: '2022.02 - 2024.12',
     techStack: ['Python', 'Django', 'PostgreSQL', 'Zapier'],
     contributions: [
       '교육과정 지원자를 관리하는 지원서 및 관리자용 웹 애플리케이션 개발',
@@ -62,7 +62,7 @@ export const projects: Project[] = [
     repository: '',
     description: '교육과정 지원자 관리 및 학습자 관리를 위한 관리자 시스템',
     role: 'Backend Developer',
-    period: '2023.06 - 현재',
+    period: '2023.06 - 2026.01',
     techStack: ['Python', 'Django', 'PostgreSQL'],
     contributions: [
       '지원자 상태별 필터링 및 검색 기능 구현',

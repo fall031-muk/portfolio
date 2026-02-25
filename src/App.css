@@ -23,6 +23,47 @@ body {
   padding: 3rem 2rem;
 }
 
+.profile-section {
+  margin-bottom: 3rem;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.profile-card {
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.08);
+  border: 1px solid #e2e8f0;
+}
+
+.profile-card h3 {
+  font-size: 1.1rem;
+  color: #2d3748;
+  margin-bottom: 0.75rem;
+}
+
+.profile-card p,
+.profile-card li {
+  font-size: 0.95rem;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+.profile-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.profile-meta {
+  font-size: 0.85rem;
+  color: #718096;
+}
+
 .projects-section {
   margin-bottom: 3rem;
 }
@@ -60,5 +101,9 @@ body {
 
   .section-title {
     font-size: 1.5rem;
+  }
+
+  .profile-grid {
+    grid-template-columns: 1fr;
   }
 }
