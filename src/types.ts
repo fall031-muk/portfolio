@@ -11,6 +11,16 @@ export interface ProblemSolution {
   result: string;
 }
 
+export interface ContributionItem {
+  title: string;
+  details: string[];
+}
+
+export interface ContributionGroup {
+  title: string;
+  items: ContributionItem[];
+}
+
 export interface Project {
   name: string;
   repository: string;
@@ -19,6 +29,7 @@ export interface Project {
   period: string;
   techStack: string[];
   contributions: string[];
+  contributionGroups?: ContributionGroup[];
   commits?: Commit[];
   problemSolutions?: ProblemSolution[];
 }

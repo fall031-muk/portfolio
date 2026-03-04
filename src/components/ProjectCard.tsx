@@ -37,11 +37,35 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
 
       <div className="contributions">
         <h3>주요 기여 사항</h3>
-        <ul>
-          {project.contributions.map((contribution, index) => (
-            <li key={index}>{contribution}</li>
-          ))}
-        </ul>
+        {project.contributionGroups && project.contributionGroups.length > 0 ? (
+          <div className="contribution-groups">
+            {project.contributionGroups.map((group, groupIndex) => (
+              <div key={groupIndex} className="contribution-group">
+                <div className="contribution-group-title">{group.title}</div>
+                <ul className="contribution-items">
+                  {group.items.map((item, itemIndex) => (
+                    <li key={itemIndex} className="contribution-item">
+                      <div className="contribution-item-title">{item.title}</div>
+                      <ul className="contribution-details">
+                        {item.details.map((detail, detailIndex) => (
+                          <li key={detailIndex} className="contribution-detail">
+                            {detail}
+                          </li>
+                        ))}
+                      </ul>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        ) : (
+          <ul>
+            {project.contributions.map((contribution, index) => (
+              <li key={index}>{contribution}</li>
+            ))}
+          </ul>
+        )}
       </div>
 
       {project.commits && project.commits.length > 0 && (

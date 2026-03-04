@@ -85,13 +85,13 @@
   font-weight: 500;
 }
 
-.contributions ul {
+.contributions > ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.contributions li {
+.contributions > ul > li {
   padding: 0.5rem 0;
   padding-left: 1.5rem;
   position: relative;
@@ -99,12 +99,67 @@
   line-height: 1.6;
 }
 
-.contributions li:before {
+.contributions > ul > li:before {
   content: "▸";
   position: absolute;
   left: 0;
   color: #667eea;
   font-weight: bold;
+}
+
+.contribution-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contribution-group {
+  background: #f7fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.contribution-group-title {
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 0.75rem;
+}
+
+.contribution-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contribution-item-title {
+  font-weight: 600;
+  color: #2d3748;
+}
+
+.contribution-details {
+  list-style: none;
+  padding: 0;
+  margin: 0.5rem 0 0 0;
+}
+
+.contribution-detail {
+  padding: 0.25rem 0 0.25rem 1.25rem;
+  position: relative;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+.contribution-detail:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0.25rem;
+  color: #667eea;
+  font-weight: 700;
 }
 
 .commits {
